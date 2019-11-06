@@ -1,0 +1,241 @@
+body{
+  background-color: black;
+  margin-top: -15px;
+  font-family: 'Dancing Script', cursive;
+}
+/*configuracion de imagen*/
+article >img{
+  box-shadow: 2px 2px 2px 2px #02010a;
+  height: auto;
+}
+/*confugiracion de cabecera*/
+header{
+  background-color:  #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  width: auto;
+}
+
+header h1{
+  text-shadow: 2px 2px #02010a;
+  color: white;
+  width: auto;
+  margin-bottom: auto;
+  ms-word-break: break-all;
+     word-break: break-all;
+
+     // Non standard for webkit
+     word-break: break-word;
+
+   -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+       -ms-hyphens: auto;
+          hyphens: auto;
+ }
+/*configuracion del menu*/
+header nav{
+  text-align: right;
+ }
+header nav a{
+  margin-left: 15px;
+  margin-right: 5px;
+  font-size: 20px;
+ }
+a{
+  text-decoration: none;
+  color: black;
+}
+/*hiperbinvulos del header*/
+header nav a:hover{
+  color: white;
+  font-size: 26px;
+  text-shadow: 2px 2px #02010a;
+}
+/*Configracion de titulos h3 y texto*/
+h3{
+  text-align: center;
+}
+p{
+  text-align: center;
+}
+
+/* Configuracion de Pantalla*/
+@media (min-width: 900px) {
+  #contenedor{
+    width: 900px;
+    margin:auto;
+  }
+  /*primera imagen*/
+  #imag{
+    background-color: #82c3a6;
+    padding-bottom: 2%;
+  }
+
+  #imag #im1{
+    margin-left: 31%;
+    margin-top: 3%;
+    width: 35%;
+
+  }
+
+  #foon{
+    width: 99.9%;
+    border: solid 1px black;
+    padding-bottom: 2%;
+    background-color: #d5c75f;
+    display: flex;
+  }
+
+  #foon > div {
+    width: 50%;
+    padding: 10px;
+  }
+
+  .im2{
+    width: 100%;
+  }
+
+  footer{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #b6d5c5;
+  }
+  footer div a > img{
+  border-radius: 1000px;
+  width: 20%;
+  margin-left: 12%;
+  }
+  footer div > h3{
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 19px;
+  }
+  /*margenes y tamaño del cuadro de las cjas del footer*/
+  .caja{
+    margin: auto;
+    width: 100%;
+  }
+
+  .tex{
+    margin-bottom: 10%;
+  }
+
+  #texto{
+    margin: 0px;
+    font-size: 110%;
+
+  }
+}
+
+@media (max-width: 900px) {
+ #contenedor{
+    width: 100%;
+    margin: auto;
+
+  }
+  /*primera imagen*/
+  #imag{
+    background-color: #82c3a6;
+    padding-bottom: 2%;
+  }
+
+  #imag #im1{
+    margin-left: 31%;
+    margin-top: 3%;
+    width: 35%;
+
+  }
+
+  #foon{
+    width: 99.9%;
+    border: solid 1px black;
+    padding-bottom: 2%;
+    background-color: #d5c75f;
+    display: inline-block;
+   }
+
+   #foon > div {
+
+     width: 50%;
+     padding: 10px;
+     margin: auto;
+   }
+
+   .im2{
+     width: 100%;
+   }
+
+
+  footer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #b6d5c5;
+  }
+  footer div a > img{
+    border-radius: 1000px;
+      width: 15%;
+      margin-left: 14%;
+  }
+  footer div > h3{
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 19px;
+  }
+  /*margenes y tamaño del cuadro de las cjas del footer*/
+  .caja{
+    margin: auto;
+    width: 100%;
+  }
+
+  .tex{
+
+    font-size: 145%;
+  }
+
+  #texto{
+    margin: 0px;
+    font-size: 110%;
+  }
+
+  p{
+    font-size: 145%;
+  }
+}
+
+
+/*Mause*/
+#anima1:hover {
+   transform: rotate(10deg);
+   border: solid 2px black;
+   box-shadow: 2px 2px 2px 2px #82c3a6;
+  }
+
+#anima2:hover {
+  transform: translate(20px,-5px);
+  border: solid 2px black;
+  box-shadow: 2px 2px 2px 2px #82c3a6;
+ }
+/*animacion dee rebote*/
+@keyframes slidein{
+  0%{
+    margin-top: 150%;
+  }
+
+  60%{
+    margin-top: -5%;
+  }
+
+  100%{
+    margin-top: 0%;
+  }
+
+}
+#contenedor{
+  animation: 3s;
+  animation-name: slidein;
+}
