@@ -156,7 +156,12 @@ p{
    .anima1{
      width: 100%;
    }
-
+   header > h1{
+     text-align: center !important;
+   }
+   nav{
+     text-align: center !important;
+   }
 
   footer{
     display: flex;

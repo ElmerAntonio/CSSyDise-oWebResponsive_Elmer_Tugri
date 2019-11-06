@@ -135,6 +135,12 @@ p{
     margin: auto;
 
   }
+  header > h1{
+    text-align: center !important;
+  }
+  nav{
+    text-align: center !important;
+  }
   /*primera imagen*/
   #imag{
     background-color: #82c3a6;
